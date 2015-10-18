@@ -194,6 +194,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\BackgroundController.cs" />
     <Compile Include="Controllers\BaseController.cs" />
+    <Compile Include="Controllers\BillPropertyModelsController.cs" />
     <Compile Include="Controllers\CompanyController.cs" />
     <Compile Include="Controllers\DepartmentController.cs" />
     <Compile Include="Controllers\Generate.cs" />
@@ -204,6 +205,7 @@
     <Compile Include="Controllers\MyController.cs" />
     <Compile Include="Controllers\NationalityController.cs" />
     <Compile Include="Controllers\NationController.cs" />
+    <Compile Include="Controllers\ParamCodesController.cs" />
     <Compile Include="Controllers\PhraseController.cs" />
     <Compile Include="Controllers\PhraseSceneController.cs" />
     <Compile Include="Controllers\RoleController.cs" />
@@ -221,7 +223,10 @@
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Actions.cs" />
     <Compile Include="Models\Background.cs" />
+    <Compile Include="Models\BillProperties.cs" />
+    <Compile Include="Models\BillPropertyModels.cs" />
     <Compile Include="Models\BonsaiiDbContext.cs" />
+    <Compile Include="Models\CodeMethod.cs" />
     <Compile Include="Models\Company.cs" />
     <Compile Include="Models\DepartmentViewModel.cs" />
     <Compile Include="Models\Health.cs" />
@@ -229,6 +234,8 @@
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\Nation.cs" />
     <Compile Include="Models\Nationality.cs" />
+    <Compile Include="Models\ParamCodes.cs" />
+    <Compile Include="Models\Params.cs" />
     <Compile Include="Models\Phrase.cs" />
     <Compile Include="Models\RoleModels.cs" />
     <Compile Include="Models\SkillParameter.cs" />
@@ -437,6 +444,15 @@
     <Content Include="Views\StaffSkill\Details.cshtml" />
     <Content Include="Views\StaffSkill\Edit.cshtml" />
     <Content Include="Views\StaffSkill\Index.cshtml" />
+    <Content Include="Views\BillPropertyModels\Create.cshtml" />
+    <Content Include="Views\BillPropertyModels\Delete.cshtml" />
+    <Content Include="Views\BillPropertyModels\Edit.cshtml" />
+    <Content Include="Views\BillPropertyModels\Index.cshtml" />
+    <Content Include="Views\BillPropertyModels\Test.cshtml" />
+    <Content Include="Views\ParamCodes\Create.cshtml" />
+    <Content Include="Views\ParamCodes\Delete.cshtml" />
+    <Content Include="Views\ParamCodes\Edit.cshtml" />
+    <Content Include="Views\ParamCodes\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />

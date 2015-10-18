@@ -48,6 +48,12 @@ namespace Bonsaii.Models
 
         public System.Data.Entity.DbSet<Bonsaii.Models.SkillParameter> SkillParameters { get; set; }
         public System.Data.Entity.DbSet<Bonsaii.Models.StaffSkill> StaffSkills { get; set; }
+
+        public DbSet<BillPropertyModels> BillProperties { get; set; }
+
+        public DbSet<ParamCodes> ParamCodes { get; set; }
+
+        public DbSet<Params> Params { get; set; }
    
 
 
