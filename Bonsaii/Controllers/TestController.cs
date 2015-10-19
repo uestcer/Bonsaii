@@ -27,5 +27,11 @@ namespace Bonsaii.Controllers
         {
             return View();
         }
+
+        public ActionResult Liu()
+        {
+            return View();
+        }
+
     }
 }
