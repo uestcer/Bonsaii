@@ -210,6 +210,7 @@
     <Compile Include="Controllers\PhraseSceneController.cs" />
     <Compile Include="Controllers\RoleController.cs" />
     <Compile Include="Controllers\SkillParameterController.cs" />
+    <Compile Include="Controllers\StaffChangeController.cs" />
     <Compile Include="Controllers\StaffController.cs" />
     <Compile Include="Controllers\StaffSkillController.cs" />
     <Compile Include="Controllers\SuperRootController.cs" />
@@ -240,6 +241,7 @@
     <Compile Include="Models\RoleModels.cs" />
     <Compile Include="Models\SkillParameter.cs" />
     <Compile Include="Models\Staff.cs" />
+    <Compile Include="Models\StaffChange.cs" />
     <Compile Include="Models\StaffSkill.cs" />
     <Compile Include="Models\StaffSkillView.cs" />
     <Compile Include="Models\SystemDbContext.cs" />
@@ -454,6 +456,12 @@
     <Content Include="Views\ParamCodes\Edit.cshtml" />
     <Content Include="Views\ParamCodes\Index.cshtml" />
     <Content Include="Views\Test\Liu.cshtml" />
+    <Content Include="Views\StaffChange\Create.cshtml" />
+    <Content Include="Views\StaffChange\Delete.cshtml" />
+    <Content Include="Views\StaffChange\Details.cshtml" />
+    <Content Include="Views\StaffChange\Edit.cshtml" />
+    <Content Include="Views\StaffChange\Index.cshtml" />
+    <Content Include="Views\StaffChange\List.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
