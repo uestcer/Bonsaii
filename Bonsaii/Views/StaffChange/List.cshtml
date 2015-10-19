@@ -1,0 +1,291 @@
+﻿@model IEnumerable<Bonsaii.Models.StaffChange>
+
+@{
+    ViewBag.Title = "List";
+}
+
+<h2>List</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.BillTypeNumber)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BillTypeName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BillNumber)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.StaffNumber)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        @*<th>
+            @Html.DisplayNameFor(model => model.Gender)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Department)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.WorkType)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Position)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IdentificationType)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Nationality)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IdentificationNumber)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Entrydate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ClassOrder)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.JobState)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AbnormalChange)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FreeCard)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.WorkProperty)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ApplyOvertimeSwitch)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Source)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.QualifyingPeriodFull)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MaritalStatus)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BirthDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NativePlace)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.HealthCondition)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Nation)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Address)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.VisaOffice)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.HomeTelNumber)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EducationBackground)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.GraduationSchool)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SchoolMajor)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Degree)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Introducer)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IndividualTelNumber)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BankCardNumber)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UrgencyContactMan)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UrgencyContactAddress)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UrgencyContactPhoneNumber)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.InBlacklist)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PhysicalCardNumber)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AuditStatus)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EffectiveDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Remark)
+        </th>*@
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.BillTypeNumber)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.BillTypeName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.BillNumber)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.StaffNumber)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Name)
+        </td>
+        @*<td>
+            @Html.DisplayFor(modelItem => item.Gender)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Department)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.WorkType)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Position)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IdentificationType)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Nationality)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IdentificationNumber)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Entrydate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ClassOrder)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.JobState)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AbnormalChange)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FreeCard)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.WorkProperty)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ApplyOvertimeSwitch)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Source)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.QualifyingPeriodFull)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MaritalStatus)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.BirthDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NativePlace)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.HealthCondition)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Nation)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Address)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.VisaOffice)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.HomeTelNumber)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EducationBackground)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.GraduationSchool)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SchoolMajor)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Degree)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Introducer)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IndividualTelNumber)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.BankCardNumber)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.UrgencyContactMan)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.UrgencyContactAddress)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.UrgencyContactPhoneNumber)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.InBlacklist)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PhysicalCardNumber)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AuditStatus)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EffectiveDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Remark)
+        </td>*@
+        <td>
+            @*@Html.ActionLink("Edit", "Edit", new { id=item.Id }) |*@
+            @Html.ActionLink("查看", "Details", new { id=item.Id }) |
+            @Html.ActionLink("删除", "Delete", new { id=item.Id })
+        </td>
+    </tr>
+}
+
+</table>
