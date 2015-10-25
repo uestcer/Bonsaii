@@ -112,6 +112,7 @@
         $('#Code').val("YYYYMMDD**");
 
         $('#CodeMethod').change(function () {
+            $('#Code ~ span').text("");
             var method = $('#CodeMethod').val();
             var tmp;
             if (method == '日编+流水') {
@@ -135,15 +136,18 @@
         });
 
         $('#Code').blur(function () {
+            var method = $('#CodeMethod').val();
             var code = $('#Code').val();
             var reg = /^[a-zA-Z]{0,8}\**$/;
             var regLen = /([A-Za-z]|\*){10}/;
             if (regLen.test(code) && reg.test(code)) {
                 return
             }
-            else {
+            else if (method == "流水") {
                 $('#Code ~ span').text("流水编码格式输入错误");
             }
+            else
+                $('#Code ~ span').removeAttr('text');
         });
 
         $('#Type').blur(function () {

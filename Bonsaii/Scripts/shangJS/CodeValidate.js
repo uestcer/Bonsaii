@@ -3,6 +3,7 @@
         $('#Code').val("YYYYMMDD**");
 
         $('#CodeMethod').change(function () {
+            $('#Code ~ span').text("");
             var method = $('#CodeMethod').val();
             var tmp;
             if (method == '日编+流水') {

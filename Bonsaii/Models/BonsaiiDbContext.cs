@@ -55,6 +55,15 @@ namespace Bonsaii.Models
         public DbSet<ParamCodes> ParamCodes { get; set; }
 
         public DbSet<Params> Params { get; set; }
+
+        public DbSet<StaffParam> StaffParams { get; set; }
+        public DbSet<StaffParamType> StaffParamTypes { get; set; }
+
+        public System.Data.Entity.DbSet<Bonsaii.Models.StaffBasicParam> StaffBasicParams { get; set; }
+
+        public System.Data.Entity.DbSet<Bonsaii.Models.Recruitments> Recruitments { get; set; }
+
+
    
 
 

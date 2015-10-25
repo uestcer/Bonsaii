@@ -208,10 +208,14 @@
     <Compile Include="Controllers\ParamCodesController.cs" />
     <Compile Include="Controllers\PhraseController.cs" />
     <Compile Include="Controllers\PhraseSceneController.cs" />
+    <Compile Include="Controllers\RecruitmentsController.cs" />
     <Compile Include="Controllers\RoleController.cs" />
     <Compile Include="Controllers\SkillParameterController.cs" />
+    <Compile Include="Controllers\StaffBasicParamsController.cs" />
     <Compile Include="Controllers\StaffChangeController.cs" />
     <Compile Include="Controllers\StaffController.cs" />
+    <Compile Include="Controllers\StaffParamController.cs" />
+    <Compile Include="Controllers\StaffParamsController.cs" />
     <Compile Include="Controllers\StaffSkillController.cs" />
     <Compile Include="Controllers\SuperRootController.cs" />
     <Compile Include="Controllers\TestController.cs" />
@@ -238,10 +242,14 @@
     <Compile Include="Models\ParamCodes.cs" />
     <Compile Include="Models\Params.cs" />
     <Compile Include="Models\Phrase.cs" />
+    <Compile Include="Models\Recruitments.cs" />
     <Compile Include="Models\RoleModels.cs" />
     <Compile Include="Models\SkillParameter.cs" />
     <Compile Include="Models\Staff.cs" />
+    <Compile Include="Models\StaffBasicParam.cs" />
     <Compile Include="Models\StaffChange.cs" />
+    <Compile Include="Models\StaffParam.cs" />
+    <Compile Include="Models\StaffParamType.cs" />
     <Compile Include="Models\StaffSkill.cs" />
     <Compile Include="Models\StaffSkillView.cs" />
     <Compile Include="Models\SystemDbContext.cs" />
@@ -266,6 +274,8 @@
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\bootstrap3-typeahead.js" />
+    <Content Include="Scripts\bootstrap3-typeahead.min.js" />
     <Content Include="Scripts\datetimepicker\bootstrap-datetimepicker.min.js" />
     <Content Include="Scripts\datetimepicker\bootstrap-datetimepicker.zh-CN.js" />
     <Content Include="Scripts\Individualjs\shang.js" />
@@ -307,6 +317,10 @@
     <Content Include="Scripts\shangJS\CodeValidate.js" />
     <Content Include="Scripts\treeview\css\bootstrap-treeview.css" />
     <Content Include="Scripts\treeview\js\bootstrap-treeview.js" />
+    <Content Include="Scripts\Upload\default.css" />
+    <Content Include="Scripts\Upload\fileinput.css" />
+    <Content Include="Scripts\Upload\fileinput.js" />
+    <Content Include="Scripts\Upload\fileinput_locale_zh.js" />
     <Content Include="Scripts\_references.js" />
     <Content Include="App_Data\company.sql" />
     <Content Include="Web.config">
@@ -463,6 +477,24 @@
     <Content Include="Views\StaffChange\Edit.cshtml" />
     <Content Include="Views\StaffChange\Index.cshtml" />
     <Content Include="Views\StaffChange\List.cshtml" />
+    <Content Include="Views\StaffParams\Create.cshtml" />
+    <Content Include="Views\StaffParams\Delete.cshtml" />
+    <Content Include="Views\StaffParams\Edit.cshtml" />
+    <Content Include="Views\StaffParams\Index.cshtml" />
+    <None Include="Properties\PublishProfiles\Bonsaii.pubxml" />
+    <Content Include="Views\StaffBasicParams\Create.cshtml" />
+    <Content Include="Views\StaffBasicParams\Delete.cshtml" />
+    <Content Include="Views\StaffBasicParams\Details.cshtml" />
+    <Content Include="Views\StaffBasicParams\Edit.cshtml" />
+    <Content Include="Views\StaffBasicParams\Index.cshtml" />
+    <Content Include="Views\StaffBasicParams\Manage.cshtml" />
+    <Content Include="Views\Recruitments\Create.cshtml" />
+    <Content Include="Views\Recruitments\Delete.cshtml" />
+    <Content Include="Views\Recruitments\Details.cshtml" />
+    <Content Include="Views\Recruitments\Edit.cshtml" />
+    <Content Include="Views\Recruitments\Index.cshtml" />
+    <Content Include="Views\Recruitments\TestEdit.cshtml" />
+    <Content Include="Views\Recruitments\TestFileUpload.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
