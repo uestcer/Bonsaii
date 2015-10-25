@@ -33,5 +33,10 @@ namespace Bonsaii.Controllers
             return View();
         }
 
+        public ActionResult HolyGodDamn()
+        {
+            return View();
+        }
+
     }
 }
